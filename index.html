@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora programada en JS</h1>
+    <h2>Realizada por: Moisés Becerra</h2>
+
+        <div class="calculadora">
+            <input type="text" id="pantalla" readonly>
+            <!--linea uno-->
+            <div class="uno">
+                <button class="gris" onclick="limpiar()">AC</button>
+                <button class="gris" onclick="cambiar()">+/-</button>
+                <button class="gris" onclick="porcentaje()">%</button>
+                <button class="orange" onclick="agregar('/')">÷</button>
+            </div>
+            <!--linea dos-->
+            <div class="dos">
+                <button onclick="agregar('7')">7</button>
+                <button onclick="agregar('8')">8</button>
+                <button onclick="agregar('9')">9</button>
+                <button class="orange" onclick="agregar('*')">x</button>
+            </div>
+            <!--linea tres-->
+            <div class="tres">
+                <button onclick="agregar('4')">4</button>
+                <button onclick="agregar('5')">5</button>
+                <button onclick="agregar('6')">6</button>
+                <button class="orange" onclick="agregar('-')">-</button>
+            </div>
+            <!--linea cuatro-->
+            <div class="cuatro">
+                <button onclick="agregar('1')">1</button>
+                <button onclick="agregar('2')">2</button>
+                <button onclick="agregar('3')">3</button>
+                <button class="orange" onclick="agregar('+')">+</button>
+            </div>
+            <!--linea cinco-->
+            <div class="cinco">
+                <button class="largo" onclick="agregar('0')">0</button>
+                <button onclick="agregar('.')">,</button>
+                <button class="orange" onclick="calcular()">=</button>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
